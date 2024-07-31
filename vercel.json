@@ -1,0 +1,18 @@
+{
+    "builds": [
+        {
+            "src": "Xchange/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "3000000",
+                "runtime": "python3.9"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "Xchange/wsgi.py"
+        }
+    ]
+}
