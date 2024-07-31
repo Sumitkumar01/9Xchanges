@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "src": "Xchange/wsgi.py",
+            "src": "Xchange/Xchange/wsgi.py",
             "use": "@vercel/python",
             "config": {
                 "maxLambdaSize": "3000000",
@@ -12,7 +12,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "Xchange/wsgi.py"
+            "dest": "Xchange/Xchange/wsgi.py"
         }
     ]
 }
